@@ -97,8 +97,8 @@ def lv(update, context):
 
 updater = telegram.ext.Updater(TOKEN, use_context=True)
 disp = updater.dispatcher
-disp.add_handler(telegram.ext.CommandHandler("start", start))
-disp.add_handler(telegram.ext.CommandHandler("help", help))
+disp.add_handler(telegram.ext.CommandHandler("startshort", start))
+disp.add_handler(telegram.ext.CommandHandler("helpshort", help))
 disp.add_handler(telegram.ext.CommandHandler("adf", adf))
 disp.add_handler(telegram.ext.CommandHandler("droplink", droplink))
 disp.add_handler(telegram.ext.CommandHandler("sd", sd))
